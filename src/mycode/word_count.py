@@ -1,5 +1,4 @@
 # Databricks notebook source
-
 # Pyspark Word Count Program 
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *

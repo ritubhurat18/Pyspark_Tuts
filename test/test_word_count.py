@@ -1,7 +1,12 @@
 import pytest
 from pyspark.sql import SparkSession
 from unittest.mock import MagicMock, patch
-from src.code.word_count import clean_text
+import sys 
+import os
+
+# Get the path of the current notebook (you are in test/test_word_count.py)
+sys.path.insert(0, "/Workspace/Users/reetubhurat107@gmail.com/Pyspark_Tuts/src")
+from mycode.word_count import clean_text
 
 # This fixture automatically mocks SparkSession for all tests in this module
 @pytest.fixture(scope="module")
